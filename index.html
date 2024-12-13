@@ -7,8 +7,8 @@
     <meta name="keywords" content="generador qr, codigo qr, generador de codigo qr">
     <meta name="author" content="Santos Romero">
     <!-- Open Graph -->
-    <meta property="og:title" content="Título de tu página">
-    <meta property="og:description" content="Descripción que aparecerá al compartir en redes sociales">
+    <meta property="og:title" content="Generador de código QR">
+    <meta property="og:description" content="Ingresa una url para generar el codigo QR">
     <meta property="og:image" content="URL de la imagen que aparecerá al compartir">
     <meta property="og:url" content="URL de la página">
     <!-- css -->
@@ -17,6 +17,20 @@
 </head>
 <body>
     
+    <div class="wrapper">
+        <header>
+            <h1>Generador de código QR</h1>
+            <p>Ingresa una url para crear el código QR.</p>
+        </header>
+        <div class="form">
+            <input type="text" spellcheck="false" placeholder="Ingresa una url">
+            <button>Generar QR</button>
+            <small id="error-message">El campo no puede estar vacío.</small>
+        </div>
+        <div class="qr-code">
+            <img src="" alt="qr-code">
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
